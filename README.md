@@ -1,6 +1,6 @@
 # Virtual Home Lab: Windows and Linux Enterprise Environment
 
-A complete mini-enterprise network built on **QEMU/KVM** (virt-manager): a routed, firewalled environment with Active Directory, DNS, DHCP, Group Policy, a Linux file and web server, and a documented security policy.
+A complete mini-enterprise network built on QEMU/KVM (virt-manager): a routed, firewalled environment with Active Directory, DNS, DHCP, Group Policy, a Linux file and web server, and a documented security policy.
 
 This project is a hands-on demonstration of core System Administrator work: virtualization, networking, Windows Server and Linux administration, identity and access management, time services, firewalling and troubleshooting.
 
