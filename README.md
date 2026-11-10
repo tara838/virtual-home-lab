@@ -18,8 +18,7 @@ This project is a hands-on demonstration of core System Administrator work: virt
 
 
 ## Architecture
-
-![[diagram.png]]
+![Network Architecture Diagram](diagrams/diagram.png)
 
 
 ```mermaid

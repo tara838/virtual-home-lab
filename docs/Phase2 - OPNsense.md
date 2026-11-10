@@ -37,7 +37,7 @@ To configure interfaces you need to enter 2 in menu and the follow-up questions 
 After having gone through this process, we have the following configuration.
 ==🟢NOTE==: During the configuration DHCP was disabled on LAN and OPT1 interfaces because it is not needed due to Windows Server DHCP functionality in LAN and static IP configuration in OPT1. On WAN interface DHCP is enabled because it is necessary to get the IP address from libvirt hypervisor. IPv6 configuration was left blank in this lab.
 
-![[phase2-OPNsense-configuration-and-ping.png]]
+![phase2-OPNsense-configuration-and-ping.png](../screenshots/phase2/phase2-OPNsense-configuration-and-ping.png)
 
 The OPNsense console banner (`OPNsense.internal`) confirms all assigned subnets are active:
 
@@ -57,4 +57,4 @@ Okay. After making the configuration we need to test the functionality of it. We
     - Status: Confirms both recursive DNS resolution and end-to-end domain routing are active.
 
 
-![[phase2-opnsense-dashboard.png.png]]
+![phase2-opnsense-dashboard.png.png](../screenshots/phase2/phase2-opnsense-dashboard.png.png)

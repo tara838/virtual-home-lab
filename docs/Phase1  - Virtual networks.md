@@ -6,7 +6,7 @@
 
 
 First we need to install all the OS in QEMU/KVM
-![[phase1-installed-vms.png]]
+![phase1-installed-vms.png](../screenshots/phase1/phase1-installed-vms.png)
 After successfully accomplished previous tedious and time consuming task, it's the best time to take a snapshot of each installed so in case of failure we can unpainfully revert to the working state.
 
 The next task in the current phase is to define networks in KVM. In KVM networks are defined using .xml files.
@@ -37,4 +37,4 @@ virsh net-define lab-srv.xml && virsh net-start lab-srv && virsh net-autostart l
 virsh net-list --all
 ```
 
-![[phase1-nets-create.png]]
+![phase1-nets-create.png](../screenshots/phase1/phase1-nets-create.png)

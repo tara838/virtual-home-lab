@@ -11,23 +11,23 @@
 
 First things first we need to assign network parameters to the network host. It's possible to accomplish it using GUI or CLI
 A cmdlet `New-NetIPAddress` is used to assign network parameters to interface
-![[phase3-set-IP-to-Windows-Server.png]]
+![phase3-set-IP-to-Windows-Server.png](../screenshots/phase3/phase3-set-IP-to-Windows-Server.png)
 
 
 Change the hostname of this network host and verify the network configuration
-![[phase-3-changed-hostname-and-Get-NetIPAddress.png]]
+![phase-3-changed-hostname-and-Get-NetIPAddress.png](../screenshots/phase3/phase-3-changed-hostname-and-Get-NetIPAddress.png)
 
 
 Next we will install the Active Directory Domain Service 
-![[phase3-AD-install.png]]
+![phase3-AD-install.png](../screenshots/phase3/phase3-AD-install.png)
 
-![[phase3-domain-controller-promotion.png]]
+![phase3-domain-controller-promotion.png](../screenshots/phase3/phase3-domain-controller-promotion.png)
 
-![[phase3-check-domain-info.png]]
+![phase3-check-domain-info.png](../screenshots/phase3/phase3-check-domain-info.png)
 
 Installing DHCP Service on DC01
-![[phase3-dhcp-installation-process.png]]
-![[phase3-dhcp-install-config.png]]
+![phase3-dhcp-installation-process.png](../screenshots/phase3/phase3-dhcp-installation-process.png)
+![phase3-dhcp-install-config.png](../screenshots/phase3/phase3-dhcp-install-config.png)
 
 `Add-DhcpServerInDC` - Authorizes the server in AD. An unauthorized DHCP server in a domain refuses to hand out leases. This is a safeguard against rogue DHCP servers
 
@@ -67,17 +67,17 @@ New-ADUser -Name "Admin Taras" -SamAccountName "adm.taras" -UserPrincipalName "a
 Add-ADGroupMember -Identity "Domain Admins" -Members "adm.taras"
 ```
 
-![[phase3-created-ou.png]]
+![phase3-created-ou.png](../screenshots/phase3/phase3-created-ou.png)
 
-![[phase3-ou_created.png]]
+![phase3-ou_created.png](../screenshots/phase3/phase3-ou_created.png)
 
-![[phase3-users-created-check.png]]
+![phase3-users-created-check.png](../screenshots/phase3/phase3-users-created-check.png)
 
 Lets go through the process of creating user using GUI. Navigate to Active Directory Users and Computers and find the OU you want to add user to
-![[phase3-user-creating-gui-1.png]]
-![[phase3-user-creating-gui-2.png]]
-![[phase3-user-creating-gui-3.png]]
-![[phase3-user-creating-gui-verify.png]]
+![phase3-user-creating-gui-1.png](../screenshots/phase3/phase3-user-creating-gui-1.png)
+![phase3-user-creating-gui-2.png](../screenshots/phase3/phase3-user-creating-gui-2.png)
+![phase3-user-creating-gui-3.png](../screenshots/phase3/phase3-user-creating-gui-3.png)
+![phase3-user-creating-gui-verify.png](../screenshots/phase3/phase3-user-creating-gui-verify.png)
 
 
 
@@ -87,8 +87,8 @@ On Windows Server it is necessary to add DNS Forwarder address in order to have 
 Add-DnsServerForwarder -IPAddress 10.10.10.1
 ```
 
-![[phase3-check-ipconfig.png]]
+![phase3-check-ipconfig.png](../screenshots/phase3/phase3-check-ipconfig.png)
 
 
 Check DNS resolution
-![[phase3-check-dns-again.png]]
+![phase3-check-dns-again.png](../screenshots/phase3/phase3-check-dns-again.png)
